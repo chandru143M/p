@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form || Learningrobo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+  <body>  
+    <div class="topnav">
+      <img src="https://images-platform.99static.com//kgq3Hx-c3PxjMK4gWiqUaZUfSgI=/0x0:1000x1000/fit-in/500x500/99designs-contests-attachments/99/99316/attachment_99316081" width="3.5%" height="3.5%">
+      <a href="login.html">Logout</a>
+      <a class="active" href="#home">Home</a>
+    </div>
+    <br><br>
+    
+    <div class="group">
+      <header class="header">
+        <h1 id="title" class="text-center">Product survey form(Milk-Shakes)</h1>
+        <p id="description" class="description text-center">Enjoy The Every Sip!!</p>
+      </header>
+      <form id="survey-form" action="thankyou.html">
+        <div class="form-group">
+          <strong>
+            <label id="name-label" for="name">Name</label><br></br>
+          </strong>
+          <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required/>
+        </div>
+        <div class="form-group">
+          <strong>
+            <label id="email-label" for="email">Email</label><br></br></strong>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required/>
+        </div>
+        <div class="form-group"><strong>
+              <label id="number-label" for="number">Age <span class="clue">(optional)</span></label><br></br></strong>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Age"/>
+        </div>
+        <div class="form-group">
+          <p>Which option describes your current role?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option>Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Working">Working</option>
+            <option value="Bussiness">Bussiness</option>
+            <option value="Home maker">Home maker</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <p>Select your gender?</p>
+          <label>
+            <input type="radio" name="gender" value="Male" class="input-radio"/>Male</label><br></br>
+            <label>
+              <input type="radio" name="gender" value="Female" class="input-radio"/>Female</label><br></br>
+            <label>
+              <input type="radio" name="gender" value="Other" class="input-radio"/>Other</label>
+        </div>
+        <div class="form-group">
+          <p> Would you recommend this product to others?</p>
+            <label>
+            <input type="radio" name="user-recommend" value="Definitely" class="input-radio"/>
+               Definitely</label>
+            <br></br>
+            <label>
+              <input type="radio" name="user-recommend" value="Maybe" class="input-radio"/>Maybe</label>
+              <br></br>
+            <label>
+              <input type="radio" name="user-recommend" value="Not sure" class="input-radio"/>Not sure
+            </label>
+        </div>
+        <div class="form-group">
+          <p>Your favorite flavour?<span class="clue">(Check all that apply)</span></p>
+          <label>
+            <input name="prefer" value="Talcum powder" type="checkbox" class="input-checkbox"/>Vannilla</label><br></br>
+          <label>
+            <input name="prefer" value="Perfume" type="checkbox" class="input-checkbox"/>Strawberry</label><br></br>
+          <label>
+            <input name="prefer" value="Bathing soap" type="checkbox" class="input-checkbox"/>Chocolate</label><br></br>
+          <label>
+            <input name="prefer" value="Washing soap" type="checkbox" class="input-checkbox"/>Butterscotch</label><br></br>
+          <label>
+            <input name="prefer" value="sanitizer" type="checkbox" class="input-checkbox"/>Black Current</label><br></br>
+          <label>
+            <input name="prefer" value="Shampoo" type="checkbox" class="input-checkbox"/>Kiwi</label><br></br>
+          <label>
+            <input name="prefer" value="face-wash" type="checkbox" class="input-checkbox"/>Mango</label><br></br>
+        </div>
+        <div class="form-group">
+            <p>Any comments or suggestions?</p>
+                <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <button type="submit" id="submit" value="submit" class="submit-button">Submit</button>
+    </form>
+</div>
+</body>
+</html>      
